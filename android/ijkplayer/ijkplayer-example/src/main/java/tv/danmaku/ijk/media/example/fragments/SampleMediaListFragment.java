@@ -67,6 +67,15 @@ public class SampleMediaListFragment extends Fragment {
                 VideoActivity.intentTo(activity, url, name);
             }
         });
+        mAdapter.addItem("http://10.194.207.35:8080/h264_1080p.flv", "h264_1080p");
+        mAdapter.addItem("http://10.194.207.35:8080/h264_2160p.flv", "h264_2160p");
+
+        mAdapter.addItem("http://10.194.207.35:8080/new/ToS_1080p_59.94fps_H264_25000kbps_8bits_noHDR_v1511090000_code_new.mp4", "1080p_59.94fps_H264_25000kbps_8bits_noHDR");
+        mAdapter.addItem("http://10.194.207.35:8080/new/ToS_1080p_59.94fps_H265_12000kbps_10bits_noHDR_v1511090000_code_new.mp4", "1080p_59.94fps_H265_12000kbps_10bits_noHDR");
+        mAdapter.addItem("http://10.194.207.35:8080/new/ToS_1080p_59.94fps_H265_12000kbps_8bits_noHDR_v1511090000_code_new.mp4", "1080p_59.94fps_H265_12000kbps_8bits_noHDR");
+        mAdapter.addItem("http://10.194.207.35:8080/new/ToS_2160p_59.94fps_H264_35000kbps_8bits_noHDR_v1511090000_code_new.mp4", "2160p_59.94fps_H264_35000kbps_8bits_noHDR");
+        mAdapter.addItem("http://10.194.207.35:8080/new/ToS_2160p_59.94fps_H265_35000kbps_10bits_noHDR_v1511090000_code_new.mp4", "2160p_59.94fps_H265_35000kbps_10bits_noHDR");
+        mAdapter.addItem("http://10.194.207.35:8080/new/ToS_2160p_59.94fps_H265_35000kbps_8bits_noHDR_v1511090000_code_new.mp4", "2160p_59.94fps_H265_35000kbps_8bits_noHDR");
 
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8", "bipbop basic master playlist");
         mAdapter.addItem("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear1/prog_index.m3u8", "bipbop basic 400x300 @ 232 kbps");

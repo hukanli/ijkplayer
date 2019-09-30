@@ -1996,8 +1996,9 @@ IJKFF_Pipenode *ffpipenode_create_video_decoder_from_android_mediacodec(FFPlayer
         break;
     case AV_CODEC_ID_HEVC:
         if (!ffp->mediacodec_hevc && !ffp->mediacodec_all_videos) {
-            ALOGE("%s: MediaCodec/HEVC is disabled. codec_id:%d \n", __func__, opaque->codecpar->codec_id);
-            goto fail;
+            //ALOGE("%s: MediaCodec/HEVC is disabled. codec_id:%d \n", __func__, opaque->codecpar->codec_id);
+            //goto fail;
+            ALOGE("%s: MediaCodec/HEVC is enable. codec_id:%d \n", __func__, opaque->codecpar->codec_id);
         }
         strcpy(opaque->mcc.mime_type, SDL_AMIME_VIDEO_HEVC);
         opaque->mcc.profile = opaque->codecpar->profile;
