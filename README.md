@@ -1,3 +1,6 @@
+This branch was for testing x86 platfomr
+It can decode h264 (no 4:4:4) and h265 (no HDR) using hardware acceleration.
+
 # ijkplayer
 
  Platform | Build Status
